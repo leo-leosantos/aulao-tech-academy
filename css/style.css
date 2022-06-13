@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,16 +7,15 @@
     outline: 0;
 }
 
-html, body{
-    height: 100vh;
+html, body {
     font-family: "Source Sans Pro", "Helvetica Neue";
     text-rendering: optimizeLegibility;
     --webkit-font-smoothing: antialiased;
 }
 
 /* HEADER */
-header{
-    background-color: #0080ed ;
+header {
+    background-color: #0080ed;
 }
 
 header .container {
@@ -25,38 +24,44 @@ header .container {
     justify-content: space-between;
     max-width: 980px;
     height: 80px;
-    margin: auto; 
+    margin: auto;
+}
+
+#checkbox-menu {
+    display: none;
 }
 
 header nav ul {
     display: flex;
 }
+
 header nav ul li {
     list-style: none;
 }
+
 header nav ul li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 18px;
-  padding: 24px ;
-  transition: all 250ms linear 0s;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
 }
 
 header nav ul li a:hover {
-    background:rgb(255,255,255, 0.15) ;
+    background: rgb(255, 255, 255, 0.15);
 }
 
 header .container img {
     height: 80px;
-  
+
 
 }
 
 /* MAIN */
 main {
     margin-bottom: 100px;
-    
+
 }
 
 main .container-main {
@@ -68,17 +73,17 @@ main .container-main {
 }
 
 h2 {
-    color: rgb(0, 0,0);
+    color: rgb(0, 0, 0);
     font-size: 45px;
     line-height: 50px;
     font-weight: bold;
 
 }
 
-h3{
+h3 {
     color: rgb(131, 131, 131);
     font-size: 20px;
-    line-height:28px;
+    line-height: 28px;
     margin: 10px 0;
 }
 
@@ -101,19 +106,28 @@ form [type="submit"] {
 
     background-color: #0080ed;
     color: white;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 16px;
+    height: 40px;
 }
 
 form [type="submit"]:hover {
-    cursor: pointer;    
+    cursor: pointer;
+    background-color: rgba(0,128,237,0.75);
+    transform: translateY(-2px);
 
 }
 
-main .container-main img{
+main .container-main img {
     width: 600px;
 }
 
 /* CARDS */
 
+a{
+    text-decoration: none;
+}
 .cards {
     width: 90%;
     max-width: 980px;
@@ -125,8 +139,8 @@ main .container-main img{
 
 .text--medium {
     font-size: 16px;
-    line-height:26px ;
-    font-weight: 400 ;
+    line-height: 26px;
+    font-weight: 400;
     color: rgb(187, 185, 185);
 
 }
@@ -137,6 +151,7 @@ main .container-main img{
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px #000000;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -148,9 +163,11 @@ main .container-main img{
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius:10px 10px 0 0 ;
+    height: 225px;
 }
 
-.image img{
+.image img {
     position: absolute;
     border-radius: 10px;
     top: 50%;
@@ -161,10 +178,12 @@ main .container-main img{
 .content {
     margin: 20px;
 }
+
 .title {
     margin-bottom: 0px;
 
 }
+
 .desafio {
     font-size: 100px;
     display: flex;
